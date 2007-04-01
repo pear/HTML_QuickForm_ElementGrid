@@ -123,7 +123,7 @@ class HTML_QuickForm_ElementGrid extends HTML_QuickForm_element {
     {
         $this->_columnNames[] = $columnName;
     }
-    
+
     /**
      * Set the row names
      *
@@ -196,7 +196,7 @@ class HTML_QuickForm_ElementGrid extends HTML_QuickForm_element {
 
     /**
      * Returns Html for the element
-     * 
+     *
      * @access      public
      * @return      string
      */
@@ -294,7 +294,7 @@ class HTML_QuickForm_ElementGrid extends HTML_QuickForm_element {
                 foreach (array_keys($this->_rows[$key]) as $key2) {
                     $value = $this->_rows[$key][$key2]->exportValue($submitValues, true);
                     if (is_array($value)) {
-                        $values = array_merge($values, $value);
+                        $values = HTML_QuickForm::arrayMerge($values, $value);
                     } else {
                         $values[$this->_rows[$key][$key2]->getName()] = $value;
                     }
