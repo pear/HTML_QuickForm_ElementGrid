@@ -155,7 +155,7 @@ class HTML_QuickForm_ElementGrid extends HTML_QuickForm_element {
     function addRow(&$row, $rowName = null)
     {
         $key = sizeof($this->_rows);
-        $this->_rows[$key] =& $row;
+        $this->_rows[$key] = $row;
 
         //if updateValue has been called make sure to update the values of each added element
         foreach (array_keys($this->_rows[$key]) as $key2) {
