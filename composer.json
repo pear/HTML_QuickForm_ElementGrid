@@ -1,0 +1,31 @@
+{
+    "authors": [
+        {
+            "email": "justinpatrin@php.net",
+            "name": "Justin Patrin",
+            "role": "Lead"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "HTML_QuickForm_ElementGrid": "./"
+        }
+    },
+    "description": "More info available on: http://pear.php.net/package/HTML_QuickForm_ElementGrid",
+    "include-path": [
+        "./"
+    ],
+    "license": "LGPL",
+    "name": "pear/html_quickform_elementgrid",
+    "support": {
+        "issues": "http://pear.php.net/bugs/search.php?cmd=display&package_name[]=HTML_QuickForm_ElementGrid",
+        "source": "https://github.com/pear/HTML_QuickForm_ElementGrid"
+    },
+    "type": "library",
+    "require": {
+        "pear/pear_exception": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    }
+}
